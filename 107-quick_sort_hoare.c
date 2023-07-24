@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include "sort.h"
 
 /**
@@ -38,6 +39,7 @@ void swap_items(int *array, size_t l, size_t r)
  */
 void quick_sort_range_hoare(int *array, size_t low, size_t high, size_t size)
 {
+	bool mybool = true;
 	size_t i, j;
 	int pivot;
 
@@ -48,7 +50,7 @@ void quick_sort_range_hoare(int *array, size_t low, size_t high, size_t size)
 	i = low - 1;
 	j = high + 1;
 
-	while (TRUE)
+	while (mybool)
 	{
 		/* Find element on the left side that should be on the right side */
 		do {
@@ -88,7 +90,7 @@ void quick_sort_range_hoare(int *array, size_t low, size_t high, size_t size)
  *              algorithm with Hoare's partition scheme. It calls the
  *              quick_sort_range_hoare function to sort the entire array.
  */
-void quick_sort_hoare(int *array, size_t size)
+void quick_sort (int *array, size_t size)
 {
 	if ((array != NULL) && (size > 1))
 	{

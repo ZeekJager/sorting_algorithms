@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../sort.h"
+#include "sort.h"
 
 /**
  * main - Entry point
@@ -16,13 +16,13 @@ int main(void)
 
   print_array(array, n);
   printf("\n");
-  quick_sort_hoare(array, n);
+  quick_sort(array, n);
   printf("\n");
   print_array(array, n);
   puts("--------------");
   print_array(array1, n1);
   printf("\n");
-  quick_sort_hoare(array1, n1);
+  quick_sort(array1, n1);
   printf("\n");
   print_array(array1, n1);
   return (0);
