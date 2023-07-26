@@ -57,7 +57,7 @@ typedef struct deck_node_s
  * @str1: The first string to compare.
  * @str2: The second string to compare.
  *
- * Return: The comparison value: -1 if str1 < str2, 1 if str1 > str2, 0 if equal.
+ * Return: The comparison value: -1 if str1<str2, 1 if str1>str2, 0 if equal.
  */
 int val_cmp(const char *str1, const char *str2);
 
@@ -78,7 +78,7 @@ int card_key(const card_t *card);
 void swap_nodes(deck_node_t **list, deck_node_t *l, deck_node_t *r);
 
 /**
- * sort_deck - Sorts a deck of playing cards using the insertion sort algorithm.
+ * sort_deck - Sorts a deck of playing cards using the insertion sort algorithm
  * @deck: A pointer to the deck of cards to sort.
  */
 void sort_deck(deck_node_t **deck);
